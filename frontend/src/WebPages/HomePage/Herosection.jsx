@@ -1,13 +1,14 @@
 import profPhoto from '../../assets/prof_photo.jpg';
-import linkedinLogo from '../../assets/linkedin.webp';
-import googleScholarLogo from '../../assets/google_scholar.webp';
-import researchGateLogo from '../../assets/Researh_gate.webp';
+import linkedinLogo from '../../assets/linkedin.PNG';
+import googleScholarLogo from '../../assets/google-scholar.png';
+import researchGateLogo from '../../assets/research_gate.png';
 import vidwanLogo from '../../assets/vidwan.webp';
+import orcidLogo from '../../assets/orcid.png';
+import scopusLogo from '../../assets/scopusid.png';
 
 function Herosection() {
   return (
-    <div className="min-h-screen bg-white">
-      <section className="h-[75vh] bg-linear-to-br from-emerald-600 via-green-700 to-emerald-800 relative overflow-hidden">
+    <section className="h-[75vh] bg-linear-to-br from-emerald-600 via-green-700 to-emerald-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
 
         <div className="relative h-full max-w-6xl mx-auto px-6 flex items-center justify-center">
@@ -82,17 +83,29 @@ function Herosection() {
                 >
                   <img src={vidwanLogo} alt="Vidwan" className="w-full h-full object-contain" />
                 </a>
+                <a
+                  href="https://orcid.org/0000-0001-5232-6043"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  aria-label="ORCID"
+                >
+                  <img src={orcidLogo} alt="ORCID" className="w-full h-full object-contain" />
+                </a>
+                <a
+                  href="https://www.scopus.com/authid/detail.uri?authorId=57224648437"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  aria-label="Scopus"
+                >
+                  <img src={scopusLogo} alt="Scopus" className="w-full h-full object-contain" />
+                </a>
               </div>
             </div>
           </div>
-
-         
         </div>
-
-        </section>
-
-      
-    </div>
+      </section>
   );
 }
 
