@@ -90,7 +90,7 @@ function AwardAndHonour() {
             {scholarships.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-md border border-gray-300"
+                className="bg-white rounded-xl p-6 border border-gray-300"
               >
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
@@ -114,7 +114,7 @@ function AwardAndHonour() {
             {qualifications.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-md border border-gray-300"
+                className="bg-white rounded-xl p-6 border border-gray-300"
               >
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
@@ -142,7 +142,7 @@ function AwardAndHonour() {
             {moocCertificates.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-md border border-gray-300"
+                className="bg-white rounded-xl p-6 border border-gray-300"
               >
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">

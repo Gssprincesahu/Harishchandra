@@ -2,7 +2,7 @@ import { Users, BookOpen, Briefcase } from 'lucide-react';
 
 function About() {
   return (
-    <section className="bg-white py-12 px-6">
+    <section className="bg-white py-12 px-6 mb-16">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">About</h2>
