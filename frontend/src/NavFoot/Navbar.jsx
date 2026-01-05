@@ -12,7 +12,7 @@ export default function Navbar() {
     { name: "Publication", path: "/publication" },
     { name: "Awards and Honors", path: "/awards-and-honors" },
     { name: "Work Experience", path: "/work-experience" },
-    { name: "Curriculum Vitae", path: "/cv" },
+    // { name: "Curriculum Vitae", path: "/cv" },
   ];
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Navbar() {
               />
             </div>
             <span className="text-xl font-semibold text-gray-800 whitespace-nowrap">
-              Dr. Satvik Vats
+              Dr. Harish Chandra
             </span>
           </div>
 

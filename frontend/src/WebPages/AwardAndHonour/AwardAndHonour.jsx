@@ -63,12 +63,7 @@ function AwardAndHonour() {
     },
   ];
 
-  const researchProject = {
-    title: "Study of Derived Length and Nilpotency Class of Group Algebras",
-    funding: "DST (SERB) New Delhi",
-    period: "2017-2020",
-    amount: "Rs. 5.45 Lac",
-  };
+
 
   return (
     <div className="min-h-screen mb-16">
@@ -136,22 +131,7 @@ function AwardAndHonour() {
           </div>
         </section>
 
-        {/* Research Grant */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-8">Research Grant</h2>
-          <div className="bg-white rounded-xl p-8 shadow-md border border-gray-300">
-            <h3 className="text-xl font-bold mb-2">{researchProject.title}</h3>
-            <p className="text-gray-700">
-              <b>Period:</b> {researchProject.period}
-            </p>
-            <p className="text-gray-700">
-              <b>Funding:</b> {researchProject.funding}
-            </p>
-            <p className="text-gray-700">
-              <b>Amount:</b> {researchProject.amount}
-            </p>
-          </div>
-        </section>
+
 
         {/* MOOC */}
         <section>
