@@ -23,7 +23,7 @@ function Publications() {
           {publications.map((pub, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-300 rounded-xl p-6"
+              className="bg-linear-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
             >
               <h2 className="text-lg font-bold text-gray-900 mb-2">
                 {pub.title}

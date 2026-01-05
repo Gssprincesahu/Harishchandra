@@ -7,6 +7,7 @@ import {
   Medal,
   Microscope,
 } from "lucide-react";
+import Footer from "../../NavFoot/Footer";
 
 export default function ResearchArea() {
   const researchProject = {
@@ -32,6 +33,9 @@ export default function ResearchArea() {
               Dr. Harish Chandra, Assistant Professor
             </p>
           </div>
+          
+          
+
           {/* Research Grant */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-8">Research Grant</h2>

@@ -1,4 +1,4 @@
-import { Users, BookOpen, Briefcase } from 'lucide-react';
+import { Users, BookOpen, Briefcase, GraduationCap } from 'lucide-react';
 
 function About() {
   return (
@@ -60,6 +60,16 @@ function About() {
                 <p className="text-gray-700 mt-2">
                   Attended <span className="font-semibold text-emerald-700">29 national & international</span> events
                 </p>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-200 pt-12">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Expertise</h3>
+              <div className="bg-linear-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-8">
+                <div className="flex items-center gap-3">
+                  <GraduationCap className="w-8 h-8 text-emerald-600" />
+                  <h3 className="text-2xl font-semibold text-gray-900">Mathematics</h3>
+                </div>
               </div>
             </div>
 
@@ -186,6 +196,8 @@ function About() {
                 </div>
               </div>
             </div>
+
+            
           </div>
         </div>
       </section>

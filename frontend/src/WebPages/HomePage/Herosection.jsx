@@ -13,12 +13,12 @@ function Herosection() {
 
         <div className="relative h-full max-w-6xl mx-auto px-6 flex items-center justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
-            <div className="flex justify-center animate-fade-in group">
-              <div className="w-64 h-80 md:w-80 md:h-96 bg-white rounded-xl shadow-2xl overflow-hidden transition-all duration-500 hover:shadow-emerald-500/50 hover:scale-105 hover:rotate-1">
+            <div className="flex justify-center">
+              <div className="w-64 h-80 md:w-80 md:h-96 bg-white rounded-xl shadow-2xl overflow-hidden">
                 <img 
                   src={profPhoto} 
                   alt="Dr. Harish Chandra" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
