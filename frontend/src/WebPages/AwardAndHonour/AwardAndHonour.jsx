@@ -10,10 +10,10 @@ import {
 function AwardAndHonour() {
   const scholarships = [
     {
-      year: "2006-07",
-      title: "RBS M Mate Fellow",
-      institution: "Lucknow University",
-      icon: <GraduationCap className="w-6 h-6 text-white" />,
+      year: "2010-2012",
+      title: "Senior Research Fellow",
+      institution: "University Grant Commission (UGC), India",
+      icon: <Medal className="w-6 h-6 text-white" />,
     },
     {
       year: "2008-2010",
@@ -22,10 +22,10 @@ function AwardAndHonour() {
       icon: <BookOpen className="w-6 h-6 text-white" />,
     },
     {
-      year: "2010-2012",
-      title: "Senior Research Fellow",
-      institution: "University Grant Commission (UGC), India",
-      icon: <Medal className="w-6 h-6 text-white" />,
+      year: "2006-07",
+      title: "RBS M Mate Fellow",
+      institution: "Lucknow University",
+      icon: <GraduationCap className="w-6 h-6 text-white" />,
     },
   ];
 
@@ -40,6 +40,14 @@ function AwardAndHonour() {
 
   const moocCertificates = [
     {
+      year: "2020",
+      title: "Mathematical Methods and its Application",
+      description:
+        "12-week AICTE approved online course with Elite Certificate",
+      platform: "SWAYAM",
+      icon: <Trophy className="w-6 h-6 text-white" />,
+    },
+    {
       year: "2019",
       title: "Introduction to Abstract and Linear Algebra",
       description: "8-week AICTE approved online course with Elite Certificate",
@@ -50,14 +58,6 @@ function AwardAndHonour() {
       year: "2019",
       title: "Modern Algebra",
       description: "8-week AICTE approved online course with Elite Certificate",
-      platform: "SWAYAM",
-      icon: <Trophy className="w-6 h-6 text-white" />,
-    },
-    {
-      year: "2020",
-      title: "Mathematical Methods and its Application",
-      description:
-        "12-week AICTE approved online course with Elite Certificate",
       platform: "SWAYAM",
       icon: <Trophy className="w-6 h-6 text-white" />,
     },

@@ -5,6 +5,7 @@ import {
   GraduationCap,
   Star,
   Medal,
+  Microscope,
 } from "lucide-react";
 
 export default function ResearchArea() {
@@ -22,7 +23,7 @@ export default function ResearchArea() {
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mb-6">
-              <Award className="w-10 h-10 text-white" />
+              <Microscope className="w-10 h-10 text-white" />
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-2">
               Research Area

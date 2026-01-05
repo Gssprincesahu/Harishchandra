@@ -6,6 +6,7 @@ import HomePage from "./WebPages/HomePage/HomePage.jsx";
 import EducationPage from "./WebPages/EducationPage/EducationPage.jsx";
 import AwardAndHonour from "./WebPages/AwardAndHonour/AwardAndHonour.jsx";
 import ResearchArea from "./WebPages/ResearchArea/ResearchArea.jsx";
+import Publications from "./WebPages/Publications/Publication.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/education" element={<EducationPage />} />
           <Route path="/awards-and-honors" element={<AwardAndHonour />} />
           <Route path="/research-area" element={<ResearchArea />} />
+          <Route path="/publication" element={<Publications />} />
         </Routes>
       </div>
 
