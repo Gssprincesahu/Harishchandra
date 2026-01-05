@@ -7,6 +7,7 @@ import EducationPage from "./WebPages/EducationPage/EducationPage.jsx";
 import AwardAndHonour from "./WebPages/AwardAndHonour/AwardAndHonour.jsx";
 import ResearchArea from "./WebPages/ResearchArea/ResearchArea.jsx";
 import Publications from "./WebPages/Publications/Publication.jsx";
+import WorkExperience from "./WebPages/WorkExperiences/WorkExperience.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/awards-and-honors" element={<AwardAndHonour />} />
           <Route path="/research-area" element={<ResearchArea />} />
           <Route path="/publication" element={<Publications />} />
+          <Route path="/work-experience" element={<WorkExperience />} />
         </Routes>
       </div>
 
