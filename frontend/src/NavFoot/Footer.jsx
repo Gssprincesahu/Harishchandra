@@ -1,8 +1,15 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Footer() {
     return (
-        <footer className="bg-emerald-100 border-t border-emerald-500 pt-6 pb-4">
+        <motion.footer 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-emerald-100 border-t border-emerald-500 pt-6 pb-4"
+        >
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     {/* Contact Details */}
@@ -73,6 +80,6 @@ export default function Footer() {
                     <p>© 2024 Dr. Harish Chandra. All rights reserved.</p>
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     );
 }

@@ -4,6 +4,7 @@ import {
   BookOpen,
   UserRound,
 } from "lucide-react";
+import { motion } from 'framer-motion';
 
 function WorkExperience() {
   const work = [
@@ -151,27 +152,58 @@ function WorkExperience() {
     <div className="min-h-screen mb-16">
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <motion.div 
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="inline-flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mb-6"
+          >
             <BriefcaseBusiness className="w-10 h-10 text-white" />
-          </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-2">
-            Work & Experiences
-          </h1>
-          <p className="text-gray-600">
+          </motion.div>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-5xl font-bold text-gray-900 mb-2"
+          >
+            Work Experience
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-gray-600"
+          >
             Dr. Harish Chandra, Assistant Professor
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Professional Positions */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-8">
+          <motion.h2 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl font-bold mb-8"
+          >
             Professional Positions
-          </h2>
+          </motion.h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {work.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
                 className="bg-white rounded-xl p-6 shadow-md border border-gray-300"
               >
                 <div className="flex gap-4">
@@ -184,18 +216,31 @@ function WorkExperience() {
                     <p className="text-sm text-gray-600">{item.institution}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>
 
         {/* Administrative Experiences */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-8">Administrative Experiences</h2>
+          <motion.h2 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl font-bold mb-8"
+          >
+            Administrative Experiences
+          </motion.h2>
           <div className="grid gap-6 md:grid-cols-2">
             {experience.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
                 className="bg-white rounded-xl p-6 shadow-md border border-gray-300"
               >
                 <div className="flex gap-4">
@@ -208,7 +253,7 @@ function WorkExperience() {
                     <p className="text-sm text-gray-600">{item.institution}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>

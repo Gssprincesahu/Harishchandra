@@ -5,6 +5,7 @@ import researchGateLogo from '../../assets/research_gate.png';
 import vidwanLogo from '../../assets/vidwan.webp';
 import orcidLogo from '../../assets/orcid.png';
 import scopusLogo from '../../assets/scopusid.png';
+import { motion } from 'framer-motion';
 
 function Herosection() {
   return (
@@ -13,38 +14,87 @@ function Herosection() {
 
         <div className="relative h-full max-w-6xl mx-auto px-6 flex items-center justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
-            <div className="flex justify-center">
-              <div className="w-64 h-80 md:w-80 md:h-96 bg-white rounded-xl shadow-2xl overflow-hidden">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex justify-center"
+            >
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="w-64 h-80 md:w-80 md:h-96 bg-white rounded-xl shadow-2xl overflow-hidden"
+              >
                 <img 
                   src={profPhoto} 
                   alt="Dr. Harish Chandra" 
                   className="w-full h-full object-cover"
                 />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="space-y-4 animate-fade-in text-left md:text-left">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="space-y-4 text-left md:text-left"
+            >
               <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight hover:text-emerald-100 transition-colors duration-300 cursor-default">
+                <motion.h1 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className="text-5xl md:text-6xl font-bold text-white tracking-tight hover:text-emerald-100 transition-colors duration-300 cursor-default"
+                >
                   Harish Chandra
-                </h1>
-                <div className="h-2 w-full bg-white rounded-full"></div>
+                </motion.h1>
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: '100%' }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
+                  className="h-2 bg-white rounded-full"
+                ></motion.div>
               </div>
 
-              <div className="space-y-1">
-                <p className="text-2xl md:text-2xl text-white font-light">
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 1 }}
+                className="space-y-1"
+              >
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.1 }}
+                  className="text-2xl md:text-2xl text-white font-light"
+                >
                   Assistant Professor
-                </p>
-                <p className="text-base md:text-lg text-emerald-50 leading-relaxed">
+                </motion.p>
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.2 }}
+                  className="text-base md:text-lg text-emerald-50 leading-relaxed"
+                >
                   Department of Computer Science and Engineering
-                </p>
-                <p className="text-base md:text-lg text-emerald-100">
+                </motion.p>
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.3 }}
+                  className="text-base md:text-lg text-emerald-100"
+                >
                   Madan Mohan Malaviya University of Technology
-                </p>
-                <p className="text-sm md:text-base text-emerald-200">
+                </motion.p>
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.4 }}
+                  className="text-sm md:text-base text-emerald-200"
+                >
                   Gorakhpur, Uttar Pradesh, India
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
 
               <div className="flex gap-6 pt-4">
                 <a
@@ -102,7 +152,7 @@ function Herosection() {
                   <img src={scopusLogo} alt="Scopus" className="w-full h-full object-contain" />
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

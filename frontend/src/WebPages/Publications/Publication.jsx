@@ -1,29 +1,55 @@
 import { BookOpen } from "lucide-react";
 import publications from "./PublicationData";
+import { motion } from 'framer-motion';
 
 function Publications() {
   return (
     <div className="min-h-screen px-4 py-12 bg-gray-50 mb-16">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <motion.div 
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="inline-flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mb-6"
+          >
             <BookOpen className="w-10 h-10 text-white" />
-          </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-2">
+          </motion.div>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-5xl font-bold text-gray-900 mb-2"
+          >
             Publications
-          </h1>
-          <p className="text-gray-600">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-gray-600"
+          >
             Dr. Harish Chandra, Assistant Professor
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Cards */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {publications.map((pub, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-linear-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
+              className="bg-linear-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6"
             >
               <h2 className="text-lg font-bold text-gray-900 mb-2">
                 {pub.title}
@@ -63,7 +89,7 @@ function Publications() {
                   View Publication →
                 </a>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

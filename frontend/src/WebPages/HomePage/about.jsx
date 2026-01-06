@@ -1,16 +1,35 @@
 import { Users, BookOpen, Briefcase, GraduationCap } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 function About() {
   return (
     <section className="bg-white py-12 px-6 mb-16">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">About</h2>
-            <div className="h-1 w-16 bg-emerald-600 rounded-full"></div>
-          </div>
+            <motion.div 
+              initial={{ width: 0 }}
+              whileInView={{ width: '4rem' }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="h-1 bg-emerald-600 rounded-full"
+            ></motion.div>
+          </motion.div>
 
           <div className="space-y-12">
-            <div className="text-lg text-gray-700 leading-relaxed">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-lg text-gray-700 leading-relaxed"
+            >
               <p className="mb-6">
                 Dr. Harish Chandra is an Assistant Professor of Mathematics at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, where he has been actively engaged in teaching, research, and academic administration for nearly two decades.
               </p>
@@ -20,10 +39,17 @@ function About() {
               <p>
                 Dr. Chandra is a dedicated educator known for his structured approach to mathematical concepts and his commitment to nurturing analytical and problem-solving skills among students. He believes that effective teaching goes beyond classroom instruction and involves mentoring, motivation, and continuous academic engagement.
               </p>
-            </div>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-linear-to-br from-emerald-50 to-green-50 p-8 rounded-lg border border-emerald-200">
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
+                className="bg-linear-to-br from-emerald-50 to-green-50 p-8 rounded-lg border border-emerald-200"
+              >
                 <div className="flex items-center gap-3 mb-4">
                   <Users className="w-6 h-6 text-emerald-600" />
                   <h3 className="text-xl font-bold text-gray-900">Teaching Experience</h3>
@@ -34,9 +60,15 @@ function About() {
                 <p className="text-gray-700">
                   <span className="font-semibold text-emerald-700">7 years</span> of PG teaching
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="bg-linear-to-br from-emerald-50 to-green-50 p-8 rounded-lg border border-emerald-200">
+              <motion.div            initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
+                className="bg-linear-to-br from-emerald-50 to-green-50 p-8 rounded-lg border border-emerald-200"
+              >
                 <div className="flex items-center gap-3 mb-4">
                   <BookOpen className="w-6 h-6 text-emerald-600" />
                   <h3 className="text-xl font-bold text-gray-900">Research Output</h3>
@@ -47,9 +79,16 @@ function About() {
                 <p className="text-gray-700 mt-2">
                   <span className="font-semibold text-emerald-700">1 funded</span> research project completed
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="bg-linear-to-br from-emerald-50 to-green-50 p-8 rounded-lg border border-emerald-200">
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
+                className="bg-linear-to-br from-emerald-50 to-green-50 p-8 rounded-lg border border-emerald-200"
+              >
                 <div className="flex items-center gap-3 mb-4">
                   <Briefcase className="w-6 h-6 text-emerald-600" />
                   <h3 className="text-xl font-bold text-gray-900">Knowledge Sharing</h3>
@@ -60,7 +99,7 @@ function About() {
                 <p className="text-gray-700 mt-2">
                   Attended <span className="font-semibold text-emerald-700">29 national & international</span> events
                 </p>
-              </div>
+              </motion.div>
             </div>
 
             <div className="border-t border-gray-200 pt-12">
