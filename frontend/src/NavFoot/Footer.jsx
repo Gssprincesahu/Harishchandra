@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-emerald-50 border-t border-emerald-100 pt-6 pb-4">
+        <footer className="bg-emerald-100 border-t border-emerald-500 pt-6 pb-4">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     {/* Contact Details */}
