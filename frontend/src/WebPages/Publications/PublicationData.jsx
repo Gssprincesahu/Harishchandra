@@ -184,6 +184,96 @@ const publications = [
     article:
       "South East Asian Journal of Mathematics and Mathematical Sciences, Volume 18, Year 2022, Pages 85-96",
   },
+  {
+    title:
+      "THE GROUP OF UNITS OF GROUP ALGEBRAS OF ABELIAN GROUPS OF ORDER 36 AND C3 × A4 OVER ANY FINITE FIELD",
+    authors: "Chandra H.;Mishra S.",
+    article:
+      "International Electronic Journal of Algebra, Volume 32, Year 2022, Pages 176-191",
+    link: "https://doi.org/10.24330/ieja.1077623",
+  },
+  {
+    title: "Structure of unit group of F_p^n D_6",
+    authors: "Bhatt S.;Chandra H.",
+    article: "Asian European Journal of Mathematics, Volume 14, Year 2021",
+    link: "https://doi.org/10.1142/S1793557121500753",
+  },
+  {
+    title:
+      "Unit groups of group algebras of abelian groups of order 32",
+    authors: "Bhatt S.;Chandra H.",
+    article:
+      "Proyecciones, Volume 40, Year 2021, Pages 1341-1356",
+    link: "https://doi.org/10.22199/issn.0717-6279-4374",
+  },
+  {
+    title: "Modular Group Algebras with Small Upper Lie Nilpotency Index",
+    authors: "",
+    article: "Advanced Science, Engineering and Medicine, Year 2020",
+    link: "https://doi.org/10.1166/asem.2020.2517",
+  },
+  {
+    title:
+      "Relationship Between Rising Phase of Solar Cycle 23rd and 24th with Respect to Geoeffectiveness",
+    authors: "",
+    article: "Advanced Science, Engineering and Medicine, Year 2020",
+    link: "https://doi.org/10.1166/asem.2020.2518",
+  },
+  {
+    title: "Group algebras of Lie nilpotency index 14",
+    authors: "Bhatt S.;Chandra H.;Sahai M.",
+    article: "Asian European Journal of Mathematics, Volume 13, Year 2020",
+    link: "https://doi.org/10.1142/S1793557120500886",
+  },
+  {
+    title:
+      "Solar flares associated coronal mass ejection accompanied with DH type II radio burst in relation with interplanetary magnetic field, geomagnetic storms and cosmic ray intensity",
+    authors: "Chandra H.;Bhatt B.",
+    article: "New Astronomy, Volume 60, Year 2018",
+    link: "https://doi.org/10.1016/j.newast.2017.10.001",
+  },
+  {
+    title:
+      "Solar flare associated coronal mass ejections causing geo-effectiveness and Forbush decreases",
+    authors: "Bhatt B.;Chandra H.",
+    article: "Astrophysics and Space Science, Volume 362, Year 2017",
+    link: "https://doi.org/10.1007/s10509-017-3024-0",
+  },
+  {
+    title:
+      "Solar flares associated coronal mass ejections in case of type II radio bursts",
+    authors: "Bhatt B.;Prasad L.;Chandra H.;Garia S.",
+    article: "Astrophysics and Space Science, Volume 361, Year 2016",
+    link: "https://doi.org/10.1007/s10509-016-2857-2",
+  },
+  {
+    title: "Strongly Lie nilpotent group algebras of index at most 8",
+    authors: "Chandra H.;Sahai M.",
+    article: "Journal of Algebra and Its Applications, Volume 13, Year 2014",
+    link: "https://doi.org/10.1142/S0219498814500443",
+  },
+  {
+    title:
+      "On group algebras with unit groups of derived length three in characteristic three",
+    authors: "Chandra H.;Sahai M.",
+    article:
+      "Publicationes Mathematicae Debrecen, Volume 82, Year 2013, Pages 697-708",
+    link: "https://doi.org/10.5486/PMD.2013.5461",
+  },
+  {
+    title:
+      "Lie solvable group algebras of derived length three in characteristic three",
+    authors: "Chandra H.;Sahai M.",
+    article: "Journal of Algebra and Its Applications, Volume 11, Year 2012",
+    link: "https://doi.org/10.1142/S0219498812500983",
+  },
+  {
+    title: "Group algebras with unit groups of derived length three",
+    authors: "Chandra H.;Sahai M.",
+    article:
+      "Journal of Algebra and Its Applications, Volume 9, Year 2010, Pages 305-314",
+    link: "https://doi.org/10.1142/S0219498810003938",
+  },
 ];
 
 export default publications;
