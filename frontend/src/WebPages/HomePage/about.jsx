@@ -31,7 +31,7 @@ function About() {
               className="text-lg text-gray-700 leading-relaxed"
             >
               <p className="mb-6">
-                Dr. Harish Chandra is an Assistant Professor of Mathematics at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, where he has been actively engaged in teaching, research, and academic administration for nearly two decades.
+                Dr. Harish Chandra is an Assistant Professor of Mathematics in the Department of Mathematics and Scientific Computing at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, where he has been actively engaged in teaching, research, and academic administration for nearly two decades.
               </p>
               <p className="mb-6">
                 He earned his Ph.D. in Mathematics from the University of Lucknow and is a UGC-NET (JRF & SRF) qualified scholar, reflecting his strong academic foundation and research capabilities. His core research interests lie in Algebra, particularly Group Rings, along with interdisciplinary exposure to Solar Physics, demonstrating a blend of pure and applied scientific inquiry.
