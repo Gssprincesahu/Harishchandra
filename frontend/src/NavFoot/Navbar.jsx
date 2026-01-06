@@ -29,17 +29,17 @@ export default function Navbar() {
         transition={{ duration: 0.5 }}
         className="fixed top-0 w-full z-40 bg-white shadow-md"
       >
-        <div className="flex items-center justify-between h-16 px-6">
+        <div className="flex items-center justify-between h-16 px-4 sm:px-6">
           {/* LEFT: Logo */}
           <div className="flex items-center shrink-0">
-            <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden mr-2 sm:mr-3">
               <img
                 src="/Dr_Harish_Chandra.jpg"
                 alt="Dr. Harish Chandra"
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-xl font-semibold text-gray-800 whitespace-nowrap">
+            <span className="text-base sm:text-xl font-semibold text-gray-800">
               Dr. Harish Chandra
             </span>
           </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden fixed inset-0 z-50 bg-white bg-opacity-40"
+            className="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50"
             onClick={() => setIsOpen(false)}
           >
             <motion.aside
@@ -91,11 +91,11 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'tween', duration: 0.3 }}
-              className="fixed left-0 top-0 bottom-0 w-[70%] bg-white shadow-lg"
+              className="fixed left-0 top-0 bottom-0 w-[75%] max-w-xs bg-white shadow-lg overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-            <div className="p-6">
-              <div className="flex items-center mb-8 pb-4 border-b">
+            <div className="p-4 sm:p-6">
+              <div className="flex items-center mb-6 pb-4 border-b border-gray-200">
                 <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
                   <img
                     src="/Dr_Harish_Chandra.jpg"
@@ -103,7 +103,7 @@ export default function Navbar() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <span className="text-lg font-semibold">Dr. Satvik Vats</span>
+                <span className="text-base sm:text-lg font-semibold text-gray-800">Dr. Harish Chandra</span>
               </div>
 
               <nav className="space-y-2">
@@ -117,7 +117,7 @@ export default function Navbar() {
                     <Link
                       to={item.path}
                       onClick={() => setIsOpen(false)}
-                      className="block px-4 py-3 text-gray-700 hover:bg-green-600 hover:text-white rounded"
+                      className="block px-4 py-3 text-sm sm:text-base text-gray-700 hover:bg-green-600 hover:text-white rounded-md transition-colors duration-200"
                     >
                       {item.name}
                     </Link>
