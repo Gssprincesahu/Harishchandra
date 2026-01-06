@@ -84,7 +84,7 @@ function Herosection() {
                   transition={{ delay: 1.2 }}
                   className="text-sm sm:text-base md:text-lg text-emerald-50 leading-relaxed"
                 >
-                  Department of Computer Science and Engineering
+                  Department of Mathematics and Scientific Computing
                 </motion.p>
                 <motion.p 
                   initial={{ opacity: 0, y: 10 }}
