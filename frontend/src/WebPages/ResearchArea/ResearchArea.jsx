@@ -32,8 +32,8 @@ export default function ResearchArea() {
             <motion.div 
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="inline-flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mb-6"
+              transition={{ duration: 0.5, delay: 0.2, type: "spring", stiffness: 200 }}
+              className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#1F7A8C] to-[#022B3A] rounded-2xl mb-6 shadow-lg"
             >
               <Microscope className="w-10 h-10 text-white" />
             </motion.div>
@@ -73,21 +73,38 @@ export default function ResearchArea() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.02 }}
-              className="bg-white rounded-xl p-8 shadow-md border border-gray-300"
+              whileHover={{ scale: 1.03, y: -8 }}
+              className="relative bg-gradient-to-br from-[#E1E5F2] via-[#BFDBF7] to-[#E1E5F2] rounded-2xl p-8 shadow-lg border-2 border-[#1F7A8C] hover:border-[#1F7A8C] hover:shadow-2xl transition-all duration-300 overflow-hidden group cursor-pointer"
             >
-              <h3 className="text-xl font-bold mb-2">
+              {/* Animated background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1F7A8C]/0 to-[#BFDBF7]/0 group-hover:from-[#1F7A8C]/10 group-hover:to-[#BFDBF7]/10 transition-all duration-500"></div>
+              
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#1F7A8C] via-[#BFDBF7] to-[#1F7A8C] rounded-2xl opacity-0 group-hover:opacity-15 blur-xl transition-all duration-500"></div>
+              
+              {/* Decorative corners */}
+              <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-[#1F7A8C]/20 to-transparent rounded-br-full"></div>
+              <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-[#BFDBF7]/20 to-transparent rounded-tl-full"></div>
+              
+              <div className="relative z-10">
+              <h3 className="text-xl font-bold mb-2 text-gray-900">
                 {researchProject.title}
               </h3>
-              <p className="text-gray-700">
-                <b>Period:</b> {researchProject.period}
-              </p>
-              <p className="text-gray-700">
-                <b>Funding:</b> {researchProject.funding}
-              </p>
-              <p className="text-gray-700">
-                <b>Amount:</b> {researchProject.amount}
-              </p>
+              <div className="space-y-2 mt-4">
+                <p className="text-gray-700 flex items-start gap-2">
+                  <span className="font-bold text-[#022B3A] min-w-[80px]">Period:</span>
+                  <span>{researchProject.period}</span>
+                </p>
+                <p className="text-gray-700 flex items-start gap-2">
+                  <span className="font-bold text-[#022B3A] min-w-[80px]">Funding:</span>
+                  <span>{researchProject.funding}</span>
+                </p>
+                <p className="text-gray-700 flex items-start gap-2">
+                  <span className="font-bold text-[#1F7A8C] min-w-[80px]">Amount:</span>
+                  <span className="font-semibold text-[#1F7A8C]">{researchProject.amount}</span>
+                </p>
+              </div>
+              </div>
             </motion.div>
           </section>
         </div>
